@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.DS_Store
+dist/
+build/
+*.html
+!examples/*.html
+!tests/expected/*.html

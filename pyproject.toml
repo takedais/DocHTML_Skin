@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dochtml"
+version = "0.1.0"
+description = "データの杜 トーンで Markdown を HTML に変換"
+authors = [{name = "竹田@データの杜"}]
+requires-python = ">=3.9"
+dependencies = [
+    "markdown>=3.5",
+    "pygments>=2.15",
+    "Jinja2>=3.1",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+dochtml = "dochtml.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dochtml*"]
+
+[tool.setuptools.package-data]
+dochtml = ["templates/*.html", "themes/*.css"]
