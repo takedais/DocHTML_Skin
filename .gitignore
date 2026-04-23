@@ -9,3 +9,4 @@ build/
 *.html
 !examples/*.html
 !tests/expected/*.html
+!dochtml/templates/*.html
