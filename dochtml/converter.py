@@ -82,7 +82,7 @@ def convert(
     subtitle: str | None = None,
     author: str | None = None,
     date: str | None = None,
-    type: str = "report",
+    type: str | None = None,
     tags: list[str] | None = None,
 ) -> str:
     """Markdown を HTML に変換

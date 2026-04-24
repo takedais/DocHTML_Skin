@@ -52,7 +52,7 @@ def main() -> int:
         subtitle=args.subtitle,
         author=args.author,
         date=args.date,
-        type=args.type or "report",
+        type=args.type,  # None なら frontmatter → デフォルト "report" の順で解決
         tags=args.tags,
     )
 
