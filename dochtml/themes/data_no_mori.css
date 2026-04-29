@@ -316,5 +316,8 @@ hr {
 .type-note .page { padding: 32px 48px 40px; }
 .type-note .doc-header { padding: 28px 48px 20px; }
 
-/* spec: 目次を折り畳まない */
-.type-spec .toc { position: sticky; top: 0; }
+/* spec: 目次は通常フロー（sticky だと長い目次でビューポートを埋めてしまうため） */
+.type-spec .toc {
+  max-height: 60vh;
+  overflow-y: auto;
+}
